@@ -21,19 +21,19 @@ function ContactMe() {
 		e.preventDefault();
 
 		emailjs
-			// .sendForm(
-			// 	"service_plwn5yz",
-			// 	"template_6bn0j9m",
-			// 	form.current,
-			// 	"user_CfvcWb4q5M6DwsbbSJS6T"
-			// )
 			.sendForm(
-				`
-				${process.env.REACT_APP_SERVICE_ID},
-				${process.env.REACT_APP__TEMPLATE_ID},
+				"service_plwn5yz",
+				"template_6bn0j9m",
 				form.current,
-				${process.env.REACT_APP_YOUR_USER_ID}`
+				"user_CfvcWb4q5M6DwsbbSJS6T"
 			)
+			// .sendForm(
+			// 	`
+			// 	${process.env.REACT_APP_SERVICE_ID}`,
+			// 	`${process.env.REACT_APP__TEMPLATE_ID}`,
+			// 	form.current,
+			// 	`${process.env.REACT_APP_YOUR_USER_ID}`
+			// )
 			.then(
 				(result) => {
 					console.log(result.text);
