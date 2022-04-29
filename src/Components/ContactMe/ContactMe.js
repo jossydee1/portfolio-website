@@ -14,21 +14,30 @@ function ContactMe() {
 
 	const navigate = useNavigate();
 	const form = useRef();
+	console.log(process.env);
 
-	const { handleSubmit, register } = useForm();
+	// const { handleSubmit, register } = useForm();
 	const onSubmit = (e) => {
 		e.preventDefault();
 
 		emailjs
+			// .sendForm(
+			// 	"service_plwn5yz",
+			// 	"template_6bn0j9m",
+			// 	form.current,
+			// 	"user_CfvcWb4q5M6DwsbbSJS6T"
+			// )
 			.sendForm(
-				"service_plwn5yz",
-				"template_6bn0j9m",
+				`
+				${process.env.REACT_APP_SERVICE_ID},
+				${process.env.REACT_APP__TEMPLATE_ID},
 				form.current,
-				"user_CfvcWb4q5M6DwsbbSJS6T"
+				${process.env.REACT_APP_YOUR_USER_ID}`
 			)
 			.then(
 				(result) => {
 					console.log(result.text);
+
 					navigate("/");
 				},
 				(error) => {
@@ -125,10 +134,7 @@ function ContactMe() {
 						</label>
 					</div>
 					<div className="button">
-						<button
-							onClick={handleSubmit}
-							disabled={!input1 || !input3 || !input4}
-						>
+						<button onClick={onSubmit} disabled={!input1 || !input3 || !input4}>
 							Send
 						</button>
 					</div>
