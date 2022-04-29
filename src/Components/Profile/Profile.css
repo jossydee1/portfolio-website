@@ -1,0 +1,43 @@
+.profile {
+	display: flex;
+	background-color: rgb(41, 23, 65);
+	color: white;
+	border-radius: 50px;
+}
+
+.profile__details {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+	justify-content: center;
+	align-items: center;
+	width: 40vw;
+}
+
+.social-icon i {
+	color: white;
+	padding: 8px;
+	padding-left: 0px;
+	margin: 10px;
+}
+
+.social-icon i:hover {
+	transform: scale(2);
+}
+
+.profile__contact {
+	margin-top: 100px;
+}
+.contact__link > span {
+	margin: 20px;
+	padding: 20px;
+	background-color: rgb(199, 182, 182);
+	cursor: pointer;
+	border-radius: 50%;
+	font-weight: 700;
+}
+
+.contact__link > span:hover {
+	background-color: grey;
+	color: white;
+}

@@ -1,0 +1,70 @@
+.contact {
+	display: flex;
+	height: 90vh;
+}
+.contact__form {
+	display: flex;
+	justify-content: center;
+	background-color: yellow;
+	flex: 2;
+	margin: 10px;
+}
+.contact__line1 {
+	display: flex;
+}
+
+.contact__line1,
+.contact__line2,
+.contact__line3 {
+	margin: 20px;
+}
+.contact__line1,
+.contact__line2,
+.contact__line3 > label {
+	font-weight: 600;
+}
+.contact__line1 > label > input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 50px;
+	width: 300px;
+}
+.contact__line2 > label > input {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 50px;
+	width: 300px;
+}
+.contact__line3 > label > textarea {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 50px;
+	width: 500px;
+	height: 100px;
+}
+
+.form__name {
+	display: flex;
+	flex-direction: row;
+}
+
+.button > button {
+	margin-top: 0;
+	margin-left: 20px;
+	width: 80px;
+	height: 30px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.button > button:enabled {
+	background-color: rgb(41, 23, 65);
+	color: white;
+	width: 80px;
+}
+
+.star {
+	color: red;
+	font-size: 20px;
+	margin-left: 10px;
+}

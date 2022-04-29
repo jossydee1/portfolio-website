@@ -1,0 +1,32 @@
+.home {
+	display: flex;
+	background-color: rgb(41, 23, 65);
+}
+
+.profile__picture {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	box-shadow: 0px 2px 0px 0px #fff;
+	height: 300px;
+	width: 300px;
+	margin: 10% 25vw 100px 0px;
+	/* background-color: aqua; */
+	/* outline: 5px dashed red; */
+}
+
+.profile__picture-background {
+	height: 95%;
+	width: 95%;
+	background-image: url(Profile-Picture.jpg);
+	background-size: cover;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.profile__picture-background:hover {
+	transform: scale(1.07);
+	transition: 1s ease-in-out;
+}
