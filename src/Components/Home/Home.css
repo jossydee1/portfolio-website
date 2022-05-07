@@ -1,6 +1,8 @@
 .home {
 	display: flex;
 	background-color: rgb(41, 23, 65);
+	border-radius: 50px 20px 0 0;
+	height: 100vh;
 }
 
 .profile__picture {
@@ -11,7 +13,7 @@
 	box-shadow: 0px 2px 0px 0px #fff;
 	height: 300px;
 	width: 300px;
-	margin: 10% 25vw 100px 0px;
+	margin: 10% -10px 100px 0px;
 	/* background-color: aqua; */
 	/* outline: 5px dashed red; */
 }
@@ -29,4 +31,31 @@
 .profile__picture-background:hover {
 	transform: scale(1.07);
 	transition: 1s ease-in-out;
+}
+
+@media only screen and (max-width: 770px) and (min-width: 650px) {
+	.profile__picture {
+		/* background-color: #fff; */
+		height: 40vh;
+		width: 30vw;
+	}
+}
+@media only screen and (max-width: 650px) {
+	.profile__picture {
+		/* background-color: #fff; */
+		height: 120px;
+		width: 150px;
+		margin-right: 50px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.home {
+		display: grid;
+	}
+	.profile__picture {
+		margin-top: -72vh;
+		margin-left: 35vw;
+		height: 25vh;
+	}
 }

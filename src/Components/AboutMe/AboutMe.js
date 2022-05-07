@@ -1,12 +1,12 @@
 import React from "react";
 import Profile from "../Profile/Profile";
 import "./AboutMe.css";
+import AboutMeProfile from "./AboutMeProfile";
 
 function Aboutme() {
 	return (
 		<div className="about">
-			<Profile />
-			<p className=""></p>
+			{/* <Profile /> */}
 
 			<div className="about__text">
 				<p className="p">
@@ -28,6 +28,7 @@ function Aboutme() {
 					and providing solutions through digital technologies.
 				</p>
 			</div>
+			<AboutMeProfile />
 		</div>
 	);
 }

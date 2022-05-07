@@ -2,16 +2,18 @@ import React from "react";
 import "../Profile/Profile.css";
 import Typical from "react-typical";
 import { Link } from "react-router-dom";
+import ProfilePicture2 from "./Profile-Picture2.jpg";
 
-function ContactProfile() {
+function AboutMeProfile() {
 	const Alert = () => {
 		return alert(
 			"You are about to open this my social media profile on a new tab"
 		);
 	};
 	return (
-		<div className="profile">
+		<div className="profile__about">
 			<div className="profile__details">
+				<img src={ProfilePicture2} alt="" className="profile__picture2" />
 				<div className="social-icon">
 					<a
 						href="https://www.linkedin.com/mwlite/in/oluwadamilare-joseph-odulesi-88b75557"
@@ -57,49 +59,17 @@ function ContactProfile() {
 						<i className="fa fa-youtube-square"></i>
 					</a>
 				</div>
-				<div className="profile__details-name">
-					<span className="primary__text">
-						Hello, i'm <span className="highlighted__text">Joe</span>
-					</span>
-				</div>
-				<div className="profile__details-role">
-					<span className="primary__text">
-						<h1>
-							<Typical
-								loop={Infinity}
-								steps={[
-									"Vast Tech Professional",
-									3000,
-									"Full Stack Developer",
-									3000,
-									"React.Js & React-Native Dev",
-									3000,
-									"Network Administrator",
-									3000,
-									"System Administrator",
-									3000,
-								]}
-							/>
-						</h1>
-					</span>
-				</div>
-				<span className="profile__role-tagline">
-					Get the best IT services!!!
-				</span>
-				{/* <div className="profile__contact">
-					<Link to="/contact" className="contact__link">
+				<div className="profile__about-contact">
+					<Link to="/contact" className="contact__about-link">
 						<span>Hire Me Now ! ! !</span>
 					</Link>
-					<Link to="/contact" className="contact__link">
+					<Link to="/contact" className="contact__about-link">
 						<span className="btn highlighted-btn">Request for Resume</span>
 					</Link>
-					<a href="CV.pdf" download="CV__OLUWADAMILARE JOSEPH ODULESI.pdf">
-						<button className="btn highlighted-btn">Download Resume</button>
-					</a>
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);
 }
 
-export default ContactProfile;
+export default AboutMeProfile;

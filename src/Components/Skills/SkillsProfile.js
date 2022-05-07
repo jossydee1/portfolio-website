@@ -1,16 +1,16 @@
 import React from "react";
-import "../Profile/Profile.css";
+// import "./Profile.css";
 import Typical from "react-typical";
 import { Link } from "react-router-dom";
 
-function ContactProfile() {
+function SkillsProfile() {
 	const Alert = () => {
 		return alert(
 			"You are about to open this my social media profile on a new tab"
 		);
 	};
 	return (
-		<div className="profile">
+		<div className="profile__skill">
 			<div className="profile__details">
 				<div className="social-icon">
 					<a
@@ -63,20 +63,21 @@ function ContactProfile() {
 					</span>
 				</div>
 				<div className="profile__details-role">
-					<span className="primary__text">
+					<span className="primary__text-skill">
 						<h1>
 							<Typical
 								loop={Infinity}
 								steps={[
-									"Vast Tech Professional",
+									"Software Developer",
 									3000,
-									"Full Stack Developer",
-									3000,
-									"React.Js & React-Native Dev",
-									3000,
+
 									"Network Administrator",
 									3000,
 									"System Administrator",
+									3000,
+									"IT Support Profesional",
+									3000,
+									"Professional Content Writer",
 									3000,
 								]}
 							/>
@@ -84,22 +85,22 @@ function ContactProfile() {
 					</span>
 				</div>
 				<span className="profile__role-tagline">
-					Get the best IT services!!!
+					Get the best Info Tech services!!!
 				</span>
-				{/* <div className="profile__contact">
-					<Link to="/contact" className="contact__link">
+				<div className="profile-Skill__contact">
+					<Link to="/contact" className="contact-Skill__link">
 						<span>Hire Me Now ! ! !</span>
 					</Link>
-					<Link to="/contact" className="contact__link">
+					<Link to="/contact" className="contact-Skill__link">
 						<span className="btn highlighted-btn">Request for Resume</span>
 					</Link>
-					<a href="CV.pdf" download="CV__OLUWADAMILARE JOSEPH ODULESI.pdf">
+					{/* <a href="CV.pdf" download="CV__OLUWADAMILARE JOSEPH ODULESI.pdf">
 						<button className="btn highlighted-btn">Download Resume</button>
-					</a>
-				</div> */}
+					</a> */}
+				</div>
 			</div>
 		</div>
 	);
 }
 
-export default ContactProfile;
+export default SkillsProfile;

@@ -1,6 +1,8 @@
 .header {
 	display: flex;
 	position: sticky;
+	background-color: brown;
+	border-radius: 0 0 20px 50px;
 }
 
 .header__menu {
@@ -15,4 +17,6 @@
 	padding: 10px;
 	cursor: pointer;
 	text-decoration: none;
+	color: white;
+	font-weight: 650;
 }

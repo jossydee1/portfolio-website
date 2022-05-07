@@ -3,6 +3,7 @@
 	background-color: rgb(41, 23, 65);
 	color: white;
 	border-radius: 50px;
+	width: 60vw;
 }
 
 .profile__details {
@@ -16,9 +17,9 @@
 
 .social-icon i {
 	color: white;
-	padding: 8px;
+	padding: 1vw;
 	padding-left: 0px;
-	margin: 10px;
+	margin: 1vw;
 }
 
 .social-icon i:hover {
@@ -27,6 +28,7 @@
 
 .profile__contact {
 	margin-top: 100px;
+	/* width: 60vw; */
 }
 .contact__link > span {
 	margin: 20px;
@@ -40,4 +42,35 @@
 .contact__link > span:hover {
 	background-color: grey;
 	color: white;
+}
+
+.primary__text {
+	font-size: 2vw;
+}
+
+@media only screen and (max-width: 770px) and (min-width: 650px) {
+	.profile {
+		width: 68vw;
+	}
+}
+@media only screen and (max-width: 650px) and (min-width: 410px) {
+	.profile {
+		width: 100vw;
+	}
+	.contact__link > span {
+		padding: 10px;
+		font-size: 2vw;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.profile {
+		width: 100vw;
+	}
+	.contact__link > span {
+		padding: 10px;
+		font-size: 3vw;
+	}
+	.profile__details {
+		margin-top: 200px;
+	}
 }

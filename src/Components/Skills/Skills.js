@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Skills.css";
 import Profile from "../Profile/Profile";
+import SkillsProfile from "./SkillsProfile";
 
 function Skills() {
 	const Software = () => {
 		return (
-			<div className="skill__item">
+			<div className="skill__software">
 				<span>HTML</span>
 				<span>CSS</span>
 				<span>JavaScript</span>
@@ -30,7 +31,7 @@ function Skills() {
 	};
 	const Network = () => {
 		return (
-			<div className="skill__item">
+			<div className="skill__network">
 				<span>Network Administrator</span>
 				<span>Pfsense</span>
 				<span>JavaScript</span>
@@ -44,7 +45,7 @@ function Skills() {
 	};
 	const System = () => {
 		return (
-			<div className="skill__item">
+			<div className="skill__system">
 				<span>System Administrator</span>
 				<span>css</span>
 				<span>JavaScript</span>
@@ -58,7 +59,7 @@ function Skills() {
 	};
 	const Support = () => {
 		return (
-			<div className="skill__item">
+			<div className="skill__support">
 				<span>Software Installation</span>
 				<span>Hardware Setup</span>
 				<span>Communication</span>
@@ -74,14 +75,16 @@ function Skills() {
 	const [open1, setOpen1] = useState(false);
 	const [open2, setOpen2] = useState(false);
 	const [open3, setOpen3] = useState(false);
+	const [open4, setOpen4] = useState(false);
 
 	useEffect(() => {
-		const open = { open1, open2, open3 };
+		const open = { open1, open2, open3, open4 };
 		const ifClickedOutside = (e) => {
 			if (open && ref.current && !ref.current.contains(e.target)) {
 				setOpen1(false);
 				setOpen2(false);
 				setOpen3(false);
+				setOpen4(false);
 			}
 		};
 		document.addEventListener("mousedown", ifClickedOutside);
@@ -89,29 +92,37 @@ function Skills() {
 		return () => {
 			document.removeEventListener("mousedown", ifClickedOutside);
 		};
-	}, [open1, open2, open3]);
+	}, [open1, open2, open3, open4]);
 
 	return (
 		<div className="skill">
-			<Profile />
 			<div className="skillset">
-				<span onClick={() => setOpen1(!open1)} ref={ref}>
-					<p>Software Development</p>
+				<span>
+					<p onClick={() => setOpen1(!open1)} ref={ref}>
+						Software Development
+					</p>
 					{open1 && <Software />}
 				</span>
-				{/* <span onClick={() => setOpen2(!open2)} ref={ref}>
-					<p>Network Administration</p>
+				<span>
+					<p onClick={() => setOpen2(!open2)} ref={ref}>
+						Network Administration
+					</p>
 					{open2 && <Network />}
-				</span> */}
-				{/* <span onClick={() => setOpen3(!open3)} ref={ref}>
-					<p>System Administration</p>
+				</span>
+				<span>
+					<p onClick={() => setOpen3(!open3)} ref={ref}>
+						System Administration
+					</p>
 					{open3 && <System />}
-				</span> */}
-				<span onClick={() => setOpen3(!open3)} ref={ref}>
-					<p>IT Support</p>
-					{open3 && <Support />}
+				</span>
+				<span>
+					<p onClick={() => setOpen4(!open4)} ref={ref}>
+						IT Support
+					</p>
+					{open4 && <Support />}
 				</span>
 			</div>
+			<SkillsProfile />
 		</div>
 	);
 }

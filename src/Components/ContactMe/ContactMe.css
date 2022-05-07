@@ -5,9 +5,10 @@
 .contact__form {
 	display: flex;
 	justify-content: center;
-	background-color: yellow;
+	background-color: silver;
 	flex: 2;
 	margin: 10px;
+	/* max-width: 30%; */
 }
 .contact__line1 {
 	display: flex;
@@ -33,7 +34,7 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-right: 50px;
-	width: 300px;
+	/* width: 300px; */
 }
 .contact__line3 > label > textarea {
 	margin-top: 10px;

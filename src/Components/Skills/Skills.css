@@ -1,23 +1,33 @@
 .skill {
 	display: flex;
 	height: 90vh;
-	max-width: 90vw;
+	/* max-width: 97vw; */
+	background-color: rgb(41, 23, 65);
 }
 
+.profile__import {
+}
 .skillset {
 	display: flex;
-	flex-direction: row;
-	/* background-color: aqua; */
+	flex-direction: column;
+	margin-top: 30px;
+	flex: 2;
 }
-
+.skillset {
+	/* margin-left: -40vw; */
+	margin-top: 15vh;
+}
 .skillset > span > p {
-	background-color: aqua;
-	margin: 20px;
+	background-color: orange;
+	color: white;
+	font-weight: 600;
+	margin: 10px;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
-	padding: 5px;
-	width: 200px;
+	padding: 1px;
+	width: 15vw;
+	font-size: 1.3vw;
 	/* justify-content: center; */
 	/* align-items: center; */
 }
@@ -27,24 +37,128 @@
 	/* width: 200px; */
 }
 
-.skill__item {
+.skill__software {
 	display: grid;
-	grid-template-columns: auto auto auto auto;
-	/* justify-content: center; */
-	/* align-items: center; */
-	/* float: right; */
-	/* overflow: visible; */
-	height: 10vh;
-	margin-left: 100px;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	overflow: visible;
+	margin-left: 20vw;
+	margin-top: -4vh;
+	position: fixed;
 }
 
-.skill__item > span {
+.skill__software > span {
 	background-color: whitesmoke;
 	width: max-content;
-	padding: 10px;
-	margin: 15px;
+	padding: 5px;
+	margin: 5px;
 	color: black;
 	border-radius: 5px;
 	border-style: solid;
 	border-width: 1px;
+	font-size: 1.2vw;
+}
+.skill__network {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	overflow: visible;
+	margin-left: 20vw;
+	margin-top: -7vh;
+	position: fixed;
+}
+
+.skill__network > span {
+	background-color: whitesmoke;
+	width: max-content;
+	padding: 5px;
+	margin: 5px;
+	color: black;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 1.2vw;
+}
+.skill__system {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	overflow: visible;
+	margin-left: 20vw;
+	margin-top: -11vh;
+	position: fixed;
+}
+
+.skill__system > span {
+	background-color: whitesmoke;
+	width: max-content;
+	padding: 5px;
+	margin: 5px;
+	color: black;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 1.2vw;
+}
+.skill__support {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	align-items: center;
+	float: right;
+	overflow: visible;
+	margin-left: 20vw;
+	margin-top: -15vh;
+	position: fixed;
+}
+
+.skill__support > span {
+	background-color: whitesmoke;
+	width: max-content;
+	padding: 5px;
+	margin: 5px;
+	color: black;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 1.2vw;
+}
+
+.profile__skill {
+	display: flex;
+	background-color: rgb(41, 23, 65);
+	color: white;
+	border-radius: 50px;
+	width: 60vw;
+	flex: 2;
+}
+
+.profile-Skill__contact {
+	margin-top: 15vh;
+	/* width: 60vw; */
+}
+.contact-Skill__link > span {
+	margin: 2vw;
+	padding: 1vw;
+	background-color: rgb(199, 182, 182);
+	cursor: pointer;
+	border-radius: 50%;
+	font-weight: 700;
+	font-size: 1.2vw;
+}
+
+.contact-Skill__link > span:hover {
+	background-color: grey;
+	color: white;
+}
+
+.primary__text-skill {
+	color: red;
+	font-size: 1.2vw;
 }

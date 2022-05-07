@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Profile from "../Profile/Profile";
+import ProjectProfile from "./ProjectProfile";
 import "./Projects.css";
 
 function Projects() {
@@ -20,17 +21,17 @@ function Projects() {
 		{
 			title: "DLC Africa",
 			description: "Developed for the Dana Group company.",
-			url: "www.dlcafrica.com",
+			url: "https://dlcafrica.com",
 		},
 		{
 			title: "DANA Pharmaceuticals Ltd",
 			description: "Developed for DANA Pharmaceuticals Ltd",
-			url: "www.danapharmaceuticals.com",
+			url: "https://danapharmaceuticals.com",
 		},
 		{
 			title: "DANA GROUP Website",
 			description: "Official website of Dana Group",
-			url: "www.danagroup.com",
+			url: "https://danagroup.com",
 		},
 		{
 			title: "Wallet Authentication",
@@ -44,7 +45,7 @@ function Projects() {
 	};
 	return (
 		<div className="project">
-			<Profile />
+			<ProjectProfile />
 			<div className="project__list">
 				<div className="project__list-header">
 					<p>Title</p>
