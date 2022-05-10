@@ -107,7 +107,7 @@
 		margin: 5vh;
 	}
 	.project__list {
-		height: 50vh;
+		height: 10vh;
 	}
 }
 @media only screen and (max-width: 535px) {
@@ -131,6 +131,17 @@
 		margin-top: -150px;
 	}
 	.project__list {
-		height: 50vh;
+		height: 10vh;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.contact-Project__link > span {
+		margin: 2vw;
+		padding: 2vw;
+		/* background-color: rgb(199, 182, 182); */
+		/* cursor: pointer; */
+		/* border-radius: 50%; */
+		/* font-weight: 700; */
+		font-size: 3vw;
 	}
 }

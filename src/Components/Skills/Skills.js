@@ -32,28 +32,19 @@ function Skills() {
 	const Network = () => {
 		return (
 			<div className="skill__network">
-				<span>Network Administrator</span>
-				<span>Pfsense</span>
-				<span>JavaScript</span>
-				<span>React.js</span>
-				<span>React-Native</span>
-				<span>Redux</span>
-				<span>React Context API</span>
-				<span>API</span>
+				<span>Network Administration</span>
+				<span>Pfsense Installation</span>
+				<span>Pfsense Management</span>
 			</div>
 		);
 	};
 	const System = () => {
 		return (
 			<div className="skill__system">
-				<span>System Administrator</span>
-				<span>css</span>
-				<span>JavaScript</span>
-				<span>React.js</span>
-				<span>React-Native</span>
-				<span>Redux</span>
-				<span>React Context API</span>
-				<span>API</span>
+				<span>System Administration</span>
+				<span>User account Management</span>
+				<span>ManagedEngine Management</span>
+				<span>Troubleshooting</span>
 			</div>
 		);
 	};
@@ -100,24 +91,30 @@ function Skills() {
 				<span>
 					<p onClick={() => setOpen1(!open1)} ref={ref}>
 						Software Development
+						<i class="fa fa-angle-down"></i>
 					</p>
+
 					{open1 && <Software />}
 				</span>
+
 				<span>
 					<p onClick={() => setOpen2(!open2)} ref={ref}>
 						Network Administration
+						<i class="fa fa-angle-down"></i>
 					</p>
 					{open2 && <Network />}
 				</span>
 				<span>
 					<p onClick={() => setOpen3(!open3)} ref={ref}>
 						System Administration
+						<i class="fa fa-angle-down"></i>
 					</p>
 					{open3 && <System />}
 				</span>
 				<span>
 					<p onClick={() => setOpen4(!open4)} ref={ref}>
 						IT Support
+						<i class="fa fa-angle-down"></i>
 					</p>
 					{open4 && <Support />}
 				</span>

@@ -48,6 +48,10 @@
 	font-size: 2vw;
 }
 
+.highlighted__text {
+	font-size: 3vw;
+}
+
 @media only screen and (max-width: 770px) and (min-width: 650px) {
 	.profile {
 		width: 68vw;
@@ -59,7 +63,7 @@
 	}
 	.contact__link > span {
 		padding: 10px;
-		font-size: 2vw;
+		/* font-size: 2vw; */
 	}
 }
 @media only screen and (max-width: 420px) {
@@ -68,9 +72,32 @@
 	}
 	.contact__link > span {
 		padding: 10px;
-		font-size: 3vw;
+		/* font-size: 3vw; */
 	}
 	.profile__details {
 		margin-top: 200px;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.profile__contact {
+		display: flex;
+		flex-direction: column;
+		/* margin-top: 10px; */
+	}
+	.contact__link > span {
+		padding: 25px;
+		font-size: 5vw;
+	}
+	.contact__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.profile__details {
+		margin-top: 300px;
 	}
 }

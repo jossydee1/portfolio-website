@@ -59,7 +59,10 @@ function Profile() {
 				</div>
 				<div className="profile__details-name">
 					<span className="primary__text">
-						Hello, i'm <span className="highlighted__text">Joe</span>
+						Hello, i'm{" "}
+						<span className="highlighted__text">
+							Joseph Oluwadamilare Odulesi
+						</span>
 					</span>
 				</div>
 				<div className="profile__details-role">
@@ -69,16 +72,16 @@ function Profile() {
 								loop={Infinity}
 								steps={[
 									"Software Developer",
-									3000,
+									5000,
 
 									"Network Administrator",
-									3000,
+									5000,
 									"System Administrator",
-									3000,
+									5000,
 									"IT Support Profesional",
-									3000,
+									5000,
 									"Professional Content Writer",
-									3000,
+									5000,
 								]}
 							/>
 						</h1>

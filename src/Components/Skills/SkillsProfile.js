@@ -11,7 +11,7 @@ function SkillsProfile() {
 	};
 	return (
 		<div className="profile__skill">
-			<div className="profile__details">
+			<div className="profile-skill__details">
 				<div className="social-icon">
 					<a
 						href="https://www.linkedin.com/mwlite/in/oluwadamilare-joseph-odulesi-88b75557"
@@ -59,7 +59,10 @@ function SkillsProfile() {
 				</div>
 				<div className="profile__details-name">
 					<span className="primary__text">
-						Hello, i'm <span className="highlighted__text">Joe</span>
+						Hello, i'm{" "}
+						<span className="highlighted__text">
+							Joseph Oluwadamilare Odulesi
+						</span>
 					</span>
 				</div>
 				<div className="profile__details-role">
@@ -69,16 +72,16 @@ function SkillsProfile() {
 								loop={Infinity}
 								steps={[
 									"Software Developer",
-									3000,
+									5000,
 
 									"Network Administrator",
-									3000,
+									5000,
 									"System Administrator",
-									3000,
+									5000,
 									"IT Support Profesional",
-									3000,
+									5000,
 									"Professional Content Writer",
-									3000,
+									5000,
 								]}
 							/>
 						</h1>

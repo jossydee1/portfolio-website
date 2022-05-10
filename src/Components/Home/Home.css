@@ -54,7 +54,17 @@
 		display: grid;
 	}
 	.profile__picture {
-		margin-top: -72vh;
+		margin-top: -87vh;
+		margin-left: 35vw;
+		height: 25vh;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.home {
+		display: grid;
+	}
+	.profile__picture {
+		margin-top: -96vh;
 		margin-left: 35vw;
 		height: 25vh;
 	}

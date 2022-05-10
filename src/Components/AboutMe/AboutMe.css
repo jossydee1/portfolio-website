@@ -72,7 +72,7 @@
 }
 @media only screen and (max-width: 420px) {
 	.profile__picture2 {
-		margin-top: -20vh;
+		margin-top: -32vh;
 		width: 85vw;
 	}
 }
@@ -83,5 +83,17 @@
 	}
 	.profile__picture2 {
 		height: 55vh;
+	}
+}
+
+@media only screen and (max-width: 810px) {
+	.contact__about-link > span {
+		margin: 2vw;
+		padding: 2vw;
+		/* background-color: rgb(199, 182, 182); */
+		/* cursor: pointer; */
+		/* border-radius: 50%; */
+		/* font-weight: 700; */
+		font-size: 3vw;
 	}
 }

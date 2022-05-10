@@ -13,10 +13,10 @@ function Aboutme() {
 					Hi, thanks for showing interest in going through my profile.
 				</p>
 				<p className="p">
-					I am a Software Engineer who likes to develop digital products with
-					great user experience. I desire to solve many life challenges with
-					digital technology and make life experiences more interesting for
-					humanity.
+					My name is Joseph Oluwadamilare Odulesi. I am a Software Engineer who
+					likes to develop digital products with great user experience. I desire
+					to solve many life challenges with digital technology and make life
+					experiences more interesting for humanity.
 				</p>
 				<p className="p">
 					I have a vast knowledge of the Info-Tech industry cutting across

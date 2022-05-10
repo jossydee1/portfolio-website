@@ -8,7 +8,7 @@
 	background-color: silver;
 	flex: 2;
 	margin: 10px;
-	/* max-width: 30%; */
+	/* max-width: 80%; */
 }
 .contact__line1 {
 	display: flex;
@@ -17,7 +17,7 @@
 .contact__line1,
 .contact__line2,
 .contact__line3 {
-	margin: 20px;
+	margin: 1.5vw;
 }
 .contact__line1,
 .contact__line2,
@@ -28,20 +28,20 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-right: 50px;
-	width: 300px;
+	width: 20vw;
 }
 .contact__line2 > label > input {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-right: 50px;
-	/* width: 300px; */
+	width: 20vw;
 }
 .contact__line3 > label > textarea {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-right: 50px;
-	width: 500px;
-	height: 100px;
+	width: 40vw;
+	height: 25vh;
 }
 
 .form__name {
@@ -68,4 +68,46 @@
 	color: red;
 	font-size: 20px;
 	margin-left: 10px;
+}
+
+.profile__contactme {
+	display: flex;
+	background-color: rgb(41, 23, 65);
+	color: white;
+	border-radius: 50px;
+	width: 40vw;
+	flex: 2;
+}
+
+.profile__details-contactme {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+	justify-content: center;
+	align-items: center;
+	width: 40vw;
+}
+.primary__text-contactme {
+	color: red;
+	font-size: 1.2vw;
+}
+
+@media only screen and (max-width: 750px) {
+	.contact {
+		display: flex;
+		flex-direction: column-reverse;
+		height: auto;
+	}
+
+	.profile__contactme {
+		width: auto;
+	}
+
+	.profile__details-contactme {
+		margin-top: 100px;
+		margin-bottom: 50px;
+	}
+	.button {
+		margin-bottom: 10px;
+	}
 }

@@ -3,6 +3,8 @@
 	position: sticky;
 	background-color: brown;
 	border-radius: 0 0 20px 50px;
+	width: auto;
+	/* overflow: hidden; */
 }
 
 .header__menu {
@@ -19,4 +21,10 @@
 	text-decoration: none;
 	color: white;
 	font-weight: 650;
+}
+
+@media only screen and (max-width: 800px) {
+	.header__menu-link {
+		font-size: 3vw;
+	}
 }

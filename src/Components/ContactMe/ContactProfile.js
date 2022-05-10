@@ -10,8 +10,8 @@ function ContactProfile() {
 		);
 	};
 	return (
-		<div className="profile">
-			<div className="profile__details">
+		<div className="profile__contactme">
+			<div className="profile__details-contactme">
 				<div className="social-icon">
 					<a
 						href="https://www.linkedin.com/mwlite/in/oluwadamilare-joseph-odulesi-88b75557"
@@ -59,25 +59,29 @@ function ContactProfile() {
 				</div>
 				<div className="profile__details-name">
 					<span className="primary__text">
-						Hello, i'm <span className="highlighted__text">Joe</span>
+						Hello, i'm{" "}
+						<span className="highlighted__text">
+							Joseph Oluwadamilare Odulesi
+						</span>
 					</span>
 				</div>
 				<div className="profile__details-role">
-					<span className="primary__text">
+					<span className="primary__text-contactme">
 						<h1>
 							<Typical
 								loop={Infinity}
 								steps={[
-									"Vast Tech Professional",
-									3000,
-									"Full Stack Developer",
-									3000,
-									"React.Js & React-Native Dev",
-									3000,
+									"Software Developer",
+									5000,
+
 									"Network Administrator",
-									3000,
+									5000,
 									"System Administrator",
-									3000,
+									5000,
+									"IT Support Profesional",
+									5000,
+									"Professional Content Writer",
+									5000,
 								]}
 							/>
 						</h1>

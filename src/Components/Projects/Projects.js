@@ -19,6 +19,16 @@ function Projects() {
 			url: "https://facebook-project-c7847.web.app",
 		},
 		{
+			title: "Wallet Authentication",
+			description: "Website developed for cryptocurrency wallets",
+			url: "https://walletauth.netlify.app",
+		},
+		{
+			title: "Portfolio",
+			description: "My Portfolio website",
+			url: "https://jossy.largefocus.com",
+		},
+		{
 			title: "DLC Africa",
 			description: "Developed for the Dana Group company.",
 			url: "https://dlcafrica.com",
@@ -32,11 +42,6 @@ function Projects() {
 			title: "DANA GROUP Website",
 			description: "Official website of Dana Group",
 			url: "https://danagroup.com",
-		},
-		{
-			title: "Wallet Authentication",
-			description: "Website developed for cryptocurrency wallets",
-			url: "https://walletauth.netlify.app",
 		},
 	];
 
