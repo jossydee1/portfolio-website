@@ -22,10 +22,10 @@ function ContactMe() {
 
 		emailjs
 			.sendForm(
-				"service_plwn5yz",
-				"template_6bn0j9m",
+				"",
+				"",
 				form.current,
-				"user_CfvcWb4q5M6DwsbbSJS6T"
+				""
 			)
 			// .sendForm(
 			// 	`
