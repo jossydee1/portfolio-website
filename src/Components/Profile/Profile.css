@@ -45,7 +45,7 @@
 }
 
 .primary__text {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 .highlighted__text {
@@ -56,6 +56,9 @@
   .profile {
     width: 68vw;
   }
+  .primary__text {
+    font-size: 2vw;
+  }
 }
 @media only screen and (max-width: 650px) and (min-width: 410px) {
   .profile {
@@ -64,6 +67,9 @@
   .contact__link > span {
     padding: 10px;
     /* font-size: 2vw; */
+  }
+  .primary__text {
+    font-size: 2vw;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -76,6 +82,9 @@
   }
   .profile__details {
     margin-top: 200px;
+  }
+  .primary__text {
+    font-size: 2vw;
   }
 }
 
@@ -99,5 +108,8 @@
 @media only screen and (max-width: 420px) {
   .profile__details {
     margin-top: 300px;
+  }
+  .primary__text {
+    font-size: 2vw;
   }
 }
