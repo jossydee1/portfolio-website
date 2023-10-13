@@ -2,7 +2,7 @@ import React from "react";
 import "../Profile/Profile.css";
 import Typical from "react-typical";
 import { Link } from "react-router-dom";
-import ProfilePicture2 from "./Profile-Picture2.jpg";
+import ProfilePicture2 from "./Profile-Picture.jpeg";
 
 function AboutMeProfile() {
 	const Alert = () => {
