@@ -52,17 +52,17 @@ function Projects() {
 		<div className="project">
 			<ProjectProfile />
 			<div className="project__list">
-				<div className="project__list-header">
+				{/* <div className="project__list-header">
 					<p>Title</p>
 					<p>Description</p>
 					<p>Url</p>
-					{/* <p>Index</p> */}
-				</div>
+					<p>Index</p>
+				</div> */}
 				<div className="project__list-body">
 					{project.map((item, index) => (
 						<div className="project__list-item">
 							<p className="">{item.title}</p>
-							<p className="">{item.description}</p>
+							{/* <p className="">{item.description}</p> */}
 
 							<p className="item__url">
 								<a href={item.url} onClick={Alert} target="_blank">
