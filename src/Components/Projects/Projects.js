@@ -50,6 +50,7 @@ function Projects() {
 	};
 	return (
 		<div className="project">
+			{/* <p>This is a list of a few of my past projects</p> */}
 			<ProjectProfile />
 			<div className="project__list">
 				{/* <div className="project__list-header">

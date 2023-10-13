@@ -1,147 +1,148 @@
 .project {
-	display: flex;
-	height: 90vh;
+  display: flex;
+  height: 90vh;
 }
 
 .project__list {
-	/* display: grid;
+  /* display: grid;
 	grid-template-columns: auto;
 	width: 150px; */
 
-	display: flex;
-	flex-direction: column;
-	flex: 2;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
 }
 
 .project__list-header {
-	display: flex;
-	justify-content: space-between;
-	position: sticky;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
 }
 .project__list-header > p {
-	background-color: rgb(247, 243, 10);
-	margin: 1vw;
-	padding: 1.5vw;
-	width: 100%;
-	font-weight: 700;
-	font-size: 2vw;
-	border-radius: 10px;
+  background-color: rgb(247, 243, 10);
+  margin: 1vw;
+  padding: 1.5vw;
+  width: 100%;
+  font-weight: 700;
+  font-size: 2vw;
+  border-radius: 10px;
 }
 
 .project__list-body {
-	overflow: scroll;
-	/* height: 100vh; */
+  overflow: scroll;
+  /* height: 100vh; */
 }
 
 .project__list-item {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .project__list-item > p {
-	background-color: rgb(41, 23, 65);
-	margin: 1vw;
-	padding: 1.5vw;
-	width: 100%;
-	color: white;
-	border-radius: 20px;
+  background-color: rgb(41, 23, 65);
+  margin: 1vw;
+  padding: 1.5vw;
+  width: 100%;
+  color: white;
+  border-radius: 20px;
 }
 
 .item__url {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .item__url > a {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .profile__Project {
-	display: flex;
-	background-color: rgb(41, 23, 65);
-	color: white;
-	border-radius: 50px;
-	width: 30vw;
-	flex: 2;
+  display: flex;
+  background-color: rgb(41, 23, 65);
+  color: white;
+  border-radius: 50px;
+  width: 30vw;
+  flex: 2;
 }
 
 .profile-Project__contact {
-	margin-top: 15vh;
-	/* width: 60vw; */
+  margin-top: 15vh;
+  /* width: 60vw; */
 }
 .contact-Project__link > span {
-	margin: 2vw;
-	padding: 1vw;
-	background-color: rgb(199, 182, 182);
-	cursor: pointer;
-	border-radius: 50%;
-	font-weight: 700;
-	font-size: 1.2vw;
+  margin: 2vw;
+  padding: 1vw;
+  background-color: rgb(199, 182, 182);
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1.2vw;
 }
 
 .contact-Project__link > span:hover {
-	background-color: grey;
-	color: white;
+  background-color: grey;
+  color: white;
 }
 
 .primary__text-Project {
-	color: red;
-	font-size: 1.2vw;
+  color: red;
+  font-size: 1.2vw;
 }
 
 .project__social-icon i {
-	color: white;
-	padding: 1vw;
-	padding-left: 0px;
-	margin: 1vw;
+  color: white;
+  padding: 1vw;
+  padding-left: 0px;
+  margin: 1vw;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 540px) {
-	.project {
-		flex-direction: column-reverse;
-	}
-	.profile__Project {
-		width: 100%;
-	}
-	.profile-Project__contact {
-		margin: 5vh;
-	}
-	.project__list {
-		height: 10vh;
-	}
+  .project {
+    flex-direction: column-reverse;
+  }
+  .profile__Project {
+    width: 100%;
+    height: 50%;
+  }
+  .profile-Project__contact {
+    margin: 5vh;
+  }
+  .project__list {
+    height: 10vh;
+  }
 }
 @media only screen and (max-width: 535px) {
-	.project {
-		flex-direction: column-reverse;
-	}
-	.profile__Project {
-		width: 100%;
-	}
-	.profile-Project__contact {
-		margin: 5vh;
-	}
-	.project__list-header > p {
-		/* font-size: 10px; */
-	}
-	.project__list-item > p {
-		padding: 1vw;
-		font-size: 10px;
-	}
-	.project__social-icon {
-		margin-top: -150px;
-	}
-	.project__list {
-		height: 10vh;
-	}
+  .project {
+    flex-direction: column-reverse;
+  }
+  .profile__Project {
+    width: 100%;
+  }
+  .profile-Project__contact {
+    margin: 5vh;
+  }
+  .project__list-header > p {
+    /* font-size: 10px; */
+  }
+  .project__list-item > p {
+    padding: 1vw;
+    font-size: 10px;
+  }
+  .project__social-icon {
+    margin-top: -150px;
+  }
+  .project__list {
+    height: 10vh;
+  }
 }
 @media only screen and (max-width: 1024px) {
-	.contact-Project__link > span {
-		margin: 2vw;
-		padding: 2vw;
-		/* background-color: rgb(199, 182, 182); */
-		/* cursor: pointer; */
-		/* border-radius: 50%; */
-		/* font-weight: 700; */
-		font-size: 3vw;
-	}
+  .contact-Project__link > span {
+    margin: 2vw;
+    padding: 2vw;
+    /* background-color: rgb(199, 182, 182); */
+    /* cursor: pointer; */
+    /* border-radius: 50%; */
+    /* font-weight: 700; */
+    font-size: 3vw;
+  }
 }
