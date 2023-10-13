@@ -61,7 +61,7 @@ function Profile() {
           <span className="primary__text">
             Hello, i'm <br />
             <span className="highlighted__text">
-              Joseph Oluwadamilare Odulesi
+              Oluwadamilare Joseph Odulesi
             </span>
             <br />I am a skilled and passionate Info tech Professional with
             extensive experiences as a
@@ -70,11 +70,7 @@ function Profile() {
         <div className="profile__details-role">
           <span className="primary__text">
             <h1>
-              <Typical
-                wrapper="pddx"
-                loop={1}
-                steps={["DevOps Engineer", 2000]}
-              />
+              <Typical loop={1} steps={["DevOps Engineer", 2000]} />
               <Typical loop={1} steps={["Software Engineer", 4000]} />
               <Typical loop={1} steps={["IT Support Engineer", 6000]} />
             </h1>
