@@ -6,10 +6,8 @@ import SkillsProfile from "./SkillsProfile";
 function Skills() {
   const DevOps = () => {
     return (
-      <div className="skill__software">
+      <div className="skill__devops">
         <span>AWS</span>
-        <span>GCP</span>
-        <span>Git</span>
         <span>Terraform</span>
         <span>Docker</span>
         <span>Kubernetes</span>
@@ -30,16 +28,6 @@ function Skills() {
         <span>JavaScript</span>
         <span>React.js</span>
         <span>React-Native</span>
-        <span>Redux</span>
-        <span>React Hooks</span>
-        <span>Redux</span>
-        <span>ES6</span>
-        <span>React Context API</span>
-        <span>Ionic React</span>
-        <span>REST API</span>
-        <span>GraphQl</span>
-        <span>Express.js</span>
-        <span>Node.js</span>
         <span>Firebase</span>
         <span>MongoDB</span>
         <span>Git</span>
@@ -109,42 +97,32 @@ function Skills() {
     <div className="skill">
       <div className="skillset">
         <span>
-          <p onClick={() => setOpen0(!open0)} ref={ref}>
+          <p>
             Cloud DevOps Engineer
-            <i class="fa fa-angle-down"></i>
+            {/* <i class="fa fa-angle-down"></i> */}
           </p>
-
-          {open0 && <DevOps />}
+          <DevOps />
         </span>
         <span>
           <p onClick={() => setOpen1(!open1)} ref={ref}>
             Software Engineer
-            <i class="fa fa-angle-down"></i>
+            {/* <i class="fa fa-angle-down"></i> */}
           </p>
-
-          {open1 && <Software />}
+          <Software />
         </span>
-
-        {/* <span>
-					<p onClick={() => setOpen2(!open2)} ref={ref}>
-						Network Administration
-						<i class="fa fa-angle-down"></i>
-					</p>
-					{open2 && <Network />}
-				</span>
-				<span>
-					<p onClick={() => setOpen3(!open3)} ref={ref}>
-						System Administration
-						<i class="fa fa-angle-down"></i>
-					</p>
-					{open3 && <System />}
-				</span> */}
+        <span>
+          <p onClick={() => setOpen1(!open1)} ref={ref}>
+            System Administration
+            {/* <i class="fa fa-angle-down"></i> */}
+          </p>
+          <System />
+        </span>
         <span>
           <p onClick={() => setOpen4(!open4)} ref={ref}>
-            IT Support
-            <i class="fa fa-angle-down"></i>
+            IT Support Engineer
+            {/* <i class="fa fa-angle-down"></i> */}
           </p>
-          {open4 && <Support />}
+          <Support />
         </span>
       </div>
       <SkillsProfile />
