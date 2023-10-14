@@ -64,12 +64,12 @@ function Projects() {
       {/* <p>This is a list of a few of my past projects</p> */}
       <ProjectProfile />
       <div className="project__list">
-        {/* <div className="project__list-header">
-					<p>Title</p>
-					<p>Description</p>
+        <div className="project__list-header">
+					<p>Name</p>
+					{/* <p>Description</p> */}
 					<p>Url</p>
-					<p>Index</p>
-				</div> */}
+					{/* <p>Index</p> */}
+				</div>
         <div className="project__list-body">
           {project.map((item, index) => (
             <div className="project__list-item">

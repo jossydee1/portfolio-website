@@ -82,9 +82,9 @@
     height: 81vh;
   }
   .profile__picture2 {
-    /* height: 100%; */
+    /* height: 100vh; */
     width: auto;
-    margin-top: -40vh;
+    /* margin-top: -20vh; */
   }
 }
 
