@@ -21,7 +21,7 @@
 .profile__picture-background {
   height: 95%;
   width: 95%;
-  background-image: url(Profile-Picture.jpg);
+  background-image: url(Profile-Picture.jpeg);
   background-size: cover;
   border-radius: 50%;
   background-repeat: no-repeat;
